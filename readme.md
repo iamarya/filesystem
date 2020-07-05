@@ -1,7 +1,7 @@
 # Readme
 
 ### Abstract
-This document shows how to run this application and use it.
+This document shows how to run this application and use it. The application reads from a text file and stores the file/folder structure into database. Then using the application the paths can be found by searching the name of the file/folder.
 
 ## Step1
 Run following command to build the application. Make sure java8 or higher version is installed, and maven is configured. Use eclipse/ intellij to import the project as existing maven project and run the file FilesystemApplication to start the web application. Else run the below command and move to step 2 to run the application.
