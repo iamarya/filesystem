@@ -4,6 +4,12 @@ import java.util.List;
 
 import javax.validation.constraints.NotEmpty;
 
+/**
+ * 
+ * This class is the interface model for the search form
+ * @author arya
+ *
+ */
 public class SearchModel {
 	@NotEmpty(message = "Search string can not be empty!")
 	private String searchString;

@@ -14,6 +14,12 @@ import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 
 
+/**
+ * 
+ * This is the model class for the file system
+ * @author arya
+ *
+ */
 @Entity(name = "file_system")
 public class FileSystem {
 

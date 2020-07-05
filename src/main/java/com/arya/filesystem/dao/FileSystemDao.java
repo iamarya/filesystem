@@ -14,6 +14,11 @@ import org.springframework.stereotype.Repository;
 
 import com.arya.filesystem.model.FileSystem;
 
+/**
+ * File system application DAO
+ * @author arya
+ *
+ */
 @Repository
 public class FileSystemDao {
 

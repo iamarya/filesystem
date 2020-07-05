@@ -1,9 +1,8 @@
 package com.arya.filesystem;
 
 /**
- * @author arya
- * 
  * This is a custom exception class for handling exception
+ * @author arya
  */
 public class CustomException extends RuntimeException {
 

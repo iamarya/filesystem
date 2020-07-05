@@ -16,17 +16,29 @@ import org.springframework.web.servlet.ModelAndView;
 import com.arya.filesystem.model.SearchModel;
 import com.arya.filesystem.service.FileSystemService;
 
+/**
+ * This is teh main cotroller of the application
+ * @author arya
+ *
+ */
 @Controller
 public class FileSystemController {
 	
 	@Autowired
     private FileSystemService fileSystemService;
 
+	/**
+	 * This is the default request mapping
+	 * @return ModelAndView
+	 */
 	@GetMapping({"/"})
     public ModelAndView hello() {
         return new ModelAndView("hello", "search", new SearchModel());
     }
 	
+	/**
+	 * This request mapping is for the submit of search form
+	 */
 	@PostMapping({"/search"})
     public ModelAndView search(@Valid @ModelAttribute("search")SearchModel searchModel, BindingResult result, Map<String, Object> model) {
 		if (result.hasErrors()) {
