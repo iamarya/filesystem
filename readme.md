@@ -14,11 +14,7 @@ Run the jar file. Give the available port.
 ##Step3
 Open `http://localhost:8080/` in a browser. 
  
-Above page will appear. Put the search string and press search. It will show the result. I have made the search case insensitive. 
- 
-[Output of the search]
- 
-[Error message if the input is blank]
-
- 
-[Error message if page does not exist]
+The home page will appear. Put the search string and press search. It will show the result. I have made the search case insensitive. 
+Output of the search will come in list structure. 
+Error message will show if the input is blank.
+Error page will be showed if page does not exist for url.
