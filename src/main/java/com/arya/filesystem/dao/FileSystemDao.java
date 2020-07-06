@@ -20,7 +20,7 @@ import com.arya.filesystem.model.FileSystem;
  *
  */
 @Repository
-public class FileSystemDao {
+public class FileSystemDao implements IFileSystemDao {
 
 	@Autowired
 	EntityManager em;

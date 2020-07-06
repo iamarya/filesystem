@@ -12,13 +12,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.arya.filesystem.model.FileSystem;
 import com.arya.filesystem.parse.Parser;
-import com.arya.filesystem.service.FileSystemService;
+import com.arya.filesystem.service.IFileSystemService;
 
 @SpringBootTest
 class FilesystemApplicationTests {
 	
 	@Autowired
-	FileSystemService fsService;
+	IFileSystemService fsService;
 
 	@Test
 	void readFile() throws IOException {

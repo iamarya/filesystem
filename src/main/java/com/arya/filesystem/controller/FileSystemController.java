@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.arya.filesystem.model.SearchModel;
-import com.arya.filesystem.service.FileSystemService;
+import com.arya.filesystem.service.IFileSystemService;
 
 /**
  * This is teh main cotroller of the application
@@ -25,7 +25,7 @@ import com.arya.filesystem.service.FileSystemService;
 public class FileSystemController {
 	
 	@Autowired
-    private FileSystemService fileSystemService;
+    private IFileSystemService fileSystemService;
 
 	/**
 	 * This is the default request mapping

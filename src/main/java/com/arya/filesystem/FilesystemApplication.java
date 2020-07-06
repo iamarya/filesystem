@@ -8,13 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.arya.filesystem.service.FileSystemService;
+import com.arya.filesystem.service.IFileSystemService;
 
 @SpringBootApplication
 public class FilesystemApplication {
 	
 	@Autowired
-	FileSystemService fsService;
+	IFileSystemService fsService;
 
 	/**
 	 * This is entry point of the application.
