@@ -45,8 +45,8 @@ public class FileSystemDao implements IFileSystemDao {
 	private List<FileSystem> getNodesForName(String name) {
 		CriteriaBuilder criteriaBuilder = em.getCriteriaBuilder();
 		CriteriaQuery<FileSystem> query = criteriaBuilder.createQuery(FileSystem.class);
-		Root<FileSystem> employee = query.from(FileSystem.class);
-		query.select(employee).where(criteriaBuilder.like(criteriaBuilder.lower(employee.get("name")), "%"+name+"%"));
+		Root<FileSystem> fs = query.from(FileSystem.class);
+		query.select(fs).where(criteriaBuilder.like(criteriaBuilder.lower(fs.get("name")), "%"+name+"%"));
 		return em.createQuery(query).getResultList();
 	}
 	
